@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const AppCategory = ({ onNewCategory }) => {
+export const AddCategory = ({ onNewCategory }) => {
 
     const [inputValue, setInputValue] = useState('');
 

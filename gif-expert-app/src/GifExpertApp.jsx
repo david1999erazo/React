@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppCategory, GifGrid } from './components';
+import { AddCategory, GifGrid } from './components';
 
 export const GifExpertApp = () => {
 
@@ -13,7 +13,7 @@ export const GifExpertApp = () => {
     return (
         <>
             <h1>Gif Expert App</h1>
-            <AppCategory onNewCategory={ event => onAddCategory(event)} />
+            <AddCategory onNewCategory={ event => onAddCategory(event)} />
             {
                 categories.map( category => (
                     <GifGrid key={category} category={category}/>
